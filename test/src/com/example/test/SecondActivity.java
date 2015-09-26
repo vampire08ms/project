@@ -1,25 +1,43 @@
 package com.example.test;
 
 import android.support.v7.app.ActionBarActivity;
+import android.text.style.BackgroundColorSpan;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class SecondActivity extends ActionBarActivity {
 
 	public TextView text = null;
+	public Button back = null;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_second);
-		
-		text = (TextView)findViewById(R.id.textView01);
+
+		text = (TextView) findViewById(R.id.textView01);
 		Intent intent = getIntent();
 		String data = intent.getStringExtra("extra_data");
 		text.setText(data);
+
+		back = (Button) findViewById(R.id.button1);
+		back.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+					Intent intent = new Intent();
+					intent.putExtra("data_return", "Hello MainActivity");
+					setResult(RESULT_OK, intent);
+					finish();
+			}
+		});
 	}
 
 	@Override
