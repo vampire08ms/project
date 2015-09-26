@@ -26,10 +26,15 @@
             android:name=".HermitIntentActivity"
             android:label="@string/title_activity_hermit_intent" >
             <intent-filter>
-                <action android:name="com.example.test.ACTION_START"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <category android:name="com.example.test.MY_CATEGORY"/>
+                <action android:name="com.example.test.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.test.MY_CATEGORY" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/title_activity_second" >
         </activity>
     </application>
 

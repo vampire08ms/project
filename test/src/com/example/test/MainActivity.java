@@ -14,12 +14,14 @@ import android.widget.Button;
 public class MainActivity extends ActionBarActivity {
 
 	Button hermitIntentButton = null;
+	Button secondButton = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
         hermitIntentButton = (Button)findViewById(R.id.button1);
+        secondButton = (Button)findViewById(R.id.Button01);
         
         hermitIntentButton.setOnClickListener(new OnClickListener() {
 			
@@ -33,6 +35,18 @@ public class MainActivity extends ActionBarActivity {
 				/* 跳转第三方应用 */
 				Intent intent= new Intent(Intent.ACTION_VIEW);
 				intent.setData(Uri.parse("http://www.bing.com"));
+				startActivity(intent);
+			}
+		});
+        
+        secondButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				String data = "Hello SecondActivity";
+				Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+				intent.putExtra("extra_data", data);
 				startActivity(intent);
 			}
 		});
@@ -54,6 +68,6 @@ public class MainActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
-        return super.onOptionsItemSelected(item);
-    }
+		return super.onOptionsItemSelected(item);
+	}
 }
