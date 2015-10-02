@@ -53,6 +53,50 @@ public class MainActivity extends ActionBarActivity {
 				startActivityForResult(intent, 1);
 			}
 		});
+
+		Log.d("MainActivity", "onCreate");
+	}
+
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		Log.d("MainActivity", "onDestroy");
+	}
+
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		Log.d("MainActivity", "onStop");
+	}
+
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		Log.d("MainActivity", "onPause");
+	}
+
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		Log.d("MainActivity", "onResume");
+	}
+
+	@Override
+	protected void onStart() {
+		// TODO Auto-generated method stub
+		super.onStart();
+		Log.d("MainActivity", "onStart");
+	}
+
+	@Override
+	protected void onRestart() {
+		// TODO Auto-generated method stub
+		super.onRestart();
+		Log.d("MainActivity", "onRestart");
 	}
 
 	@Override
@@ -74,8 +118,7 @@ public class MainActivity extends ActionBarActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	protected void onActivityResult(int requestCode, int resultCode,
-			Intent data) {
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		switch (requestCode) {
 		case 1:
 			if (resultCode == RESULT_OK) {
