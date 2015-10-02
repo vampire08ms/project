@@ -16,7 +16,8 @@ public class MainActivity extends ActionBarActivity {
 
 	Button hermitIntentButton = null;
 	Button secondButton = null;
-
+	float xdpi = 0;
+	float ydpi = 0;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -54,7 +55,12 @@ public class MainActivity extends ActionBarActivity {
 			}
 		});
 
+		xdpi = getResources().getDisplayMetrics().xdpi;
+		ydpi = getResources().getDisplayMetrics().ydpi;
+		
 		Log.d("MainActivity", getClass().getSimpleName() + " onCreate");
+		Log.d("MainActivity", "xdpi is " + xdpi);
+		Log.d("MainActivity", "ydpi is " + ydpi);
 	}
 
 	@Override
