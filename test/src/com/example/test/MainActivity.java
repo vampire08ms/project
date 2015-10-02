@@ -54,49 +54,49 @@ public class MainActivity extends ActionBarActivity {
 			}
 		});
 
-		Log.d("MainActivity", "onCreate");
+		Log.d("MainActivity", getClass().getSimpleName() + " onCreate");
 	}
 
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		Log.d("MainActivity", "onDestroy");
+		Log.d("MainActivity", getClass().getSimpleName() + " onDestroy");
 	}
 
 	@Override
 	protected void onStop() {
 		// TODO Auto-generated method stub
 		super.onStop();
-		Log.d("MainActivity", "onStop");
+		Log.d("MainActivity", getClass().getSimpleName() + " onStop");
 	}
 
 	@Override
 	protected void onPause() {
 		// TODO Auto-generated method stub
 		super.onPause();
-		Log.d("MainActivity", "onPause");
+		Log.d("MainActivity", getClass().getSimpleName() + " onPause");
 	}
 
 	@Override
 	protected void onResume() {
 		// TODO Auto-generated method stub
 		super.onResume();
-		Log.d("MainActivity", "onResume");
+		Log.d("MainActivity", getClass().getSimpleName() + " onResume");
 	}
 
 	@Override
 	protected void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
-		Log.d("MainActivity", "onStart");
+		Log.d("MainActivity", getClass().getSimpleName() + " onStart");
 	}
 
 	@Override
 	protected void onRestart() {
 		// TODO Auto-generated method stub
 		super.onRestart();
-		Log.d("MainActivity", "onRestart");
+		Log.d("MainActivity", getClass().getSimpleName() + "onRestart");
 	}
 
 	@Override
