@@ -8,28 +8,35 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.test.MainActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="16dp"
-        android:text="隐式Intent" />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hello_world" />
 
-    <Button
-        android:id="@+id/Button01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="76dp"
-        android:text="传递数据" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="隐式Intent" />
+
+        <Button
+            android:id="@+id/Button01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="传递数据" />
+        
+        <Button
+            android:id="@+id/Button03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nine_Patch" />
+    </LinearLayout>
 
 </RelativeLayout>

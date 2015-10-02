@@ -16,6 +16,7 @@ public class MainActivity extends ActionBarActivity {
 
 	Button hermitIntentButton = null;
 	Button secondButton = null;
+	Button NinePatchButton = null;
 	float xdpi = 0;
 	float ydpi = 0;
 	@Override
@@ -25,7 +26,7 @@ public class MainActivity extends ActionBarActivity {
 
 		hermitIntentButton = (Button) findViewById(R.id.button1);
 		secondButton = (Button) findViewById(R.id.Button01);
-
+		NinePatchButton = (Button)findViewById(R.id.Button03);
 		hermitIntentButton.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -54,7 +55,18 @@ public class MainActivity extends ActionBarActivity {
 				startActivityForResult(intent, 1);
 			}
 		});
+		
+		NinePatchButton.setOnClickListener(new OnClickListener() {
 
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,
+						NinePatchActivity.class);
+				startActivity(intent);
+			}
+		});
+		
 		xdpi = getResources().getDisplayMetrics().xdpi;
 		ydpi = getResources().getDisplayMetrics().ydpi;
 		
