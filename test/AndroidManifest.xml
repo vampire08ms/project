@@ -44,6 +44,10 @@
             android:name=".ChatActivity"
             android:label="@string/title_activity_chat" >
         </activity>
+        <activity
+            android:name=".FragementActivity"
+            android:label="@string/title_activity_fragement" >
+        </activity>
     </application>
 
 </manifest>

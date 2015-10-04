@@ -8,5 +8,6 @@
     <string name="title_activity_second">SecondActivity</string>
     <string name="title_activity_nine_patch">NinePatchActivity</string>
     <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_fragement">FragementActivity</string>
 
 </resources>
