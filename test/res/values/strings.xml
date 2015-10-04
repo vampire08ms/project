@@ -6,5 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_hermit_intent">HermitIntentActivity</string>
     <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_nine_patch">NinePatchActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
 
 </resources>

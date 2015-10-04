@@ -31,12 +31,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="传递数据" />
-        
+
         <Button
             android:id="@+id/Button03"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nine_Patch" />
+
+        <Button
+            android:id="@+id/Button04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chat" />
     </LinearLayout>
 
 </RelativeLayout>

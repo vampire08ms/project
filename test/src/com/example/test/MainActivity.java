@@ -17,8 +17,10 @@ public class MainActivity extends ActionBarActivity {
 	Button hermitIntentButton = null;
 	Button secondButton = null;
 	Button NinePatchButton = null;
+	Button chartButton = null;
 	float xdpi = 0;
 	float ydpi = 0;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,7 +28,9 @@ public class MainActivity extends ActionBarActivity {
 
 		hermitIntentButton = (Button) findViewById(R.id.button1);
 		secondButton = (Button) findViewById(R.id.Button01);
-		NinePatchButton = (Button)findViewById(R.id.Button03);
+		NinePatchButton = (Button) findViewById(R.id.Button03);
+		chartButton = (Button) findViewById(R.id.Button04);
+
 		hermitIntentButton.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -55,7 +59,7 @@ public class MainActivity extends ActionBarActivity {
 				startActivityForResult(intent, 1);
 			}
 		});
-		
+
 		NinePatchButton.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -66,10 +70,21 @@ public class MainActivity extends ActionBarActivity {
 				startActivity(intent);
 			}
 		});
-		
+
+		chartButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,
+						ChatActivity.class);
+				startActivity(intent);
+			}
+		});
+
 		xdpi = getResources().getDisplayMetrics().xdpi;
 		ydpi = getResources().getDisplayMetrics().ydpi;
-		
+
 		Log.d("MainActivity", getClass().getSimpleName() + " onCreate");
 		Log.d("MainActivity", "xdpi is " + xdpi);
 		Log.d("MainActivity", "ydpi is " + ydpi);
