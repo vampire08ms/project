@@ -1,5 +1,8 @@
 package com.example.test;
 
+import com.example.news.NewContentActivity;
+import com.example.news.NewsActivity;
+
 import android.support.v7.app.ActionBarActivity;
 import android.R.integer;
 import android.content.Intent;
@@ -19,6 +22,7 @@ public class MainActivity extends ActionBarActivity {
 	Button NinePatchButton = null;
 	Button chartButton = null;
 	Button fragementButton = null;
+	Button newsButton = null;
 	float xdpi = 0;
 	float ydpi = 0;
 
@@ -32,6 +36,7 @@ public class MainActivity extends ActionBarActivity {
 		NinePatchButton = (Button) findViewById(R.id.Button03);
 		chartButton = (Button) findViewById(R.id.Button04);
 		fragementButton = (Button) findViewById(R.id.Button05);
+		newsButton = (Button)findViewById(R.id.Button06);
 
 		hermitIntentButton.setOnClickListener(new OnClickListener() {
 
@@ -94,6 +99,17 @@ public class MainActivity extends ActionBarActivity {
 				startActivity(intent);
 			}
 		});
+
+		newsButton.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent(MainActivity.this,NewsActivity.class);
+				startActivity(intent);
+			}
+		});
+
 		xdpi = getResources().getDisplayMetrics().xdpi;
 		ydpi = getResources().getDisplayMetrics().ydpi;
 

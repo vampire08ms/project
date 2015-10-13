@@ -49,6 +49,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Fragment" />
+
+        <Button
+            android:id="@+id/Button06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment_NEWS" />
     </LinearLayout>
 
 </RelativeLayout>

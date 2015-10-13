@@ -9,5 +9,9 @@
     <string name="title_activity_nine_patch">NinePatchActivity</string>
     <string name="title_activity_chat">ChatActivity</string>
     <string name="title_activity_fragement">FragementActivity</string>
+    <string name="title_activity_news_content">NewsContentActivity</string>
+    <string name="title_activity_new_content">NewContentActivity</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_news_main">NewsMainActivity</string>
 
 </resources>

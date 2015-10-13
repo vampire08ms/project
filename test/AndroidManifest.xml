@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="8"
+        android:minSdkVersion="14"
         android:targetSdkVersion="21" />
 
     <application
@@ -47,6 +47,18 @@
         <activity
             android:name=".FragementActivity"
             android:label="@string/title_activity_fragement" >
+        </activity>
+        <activity
+            android:name="com.example.news.NewsContentActivity"
+            android:label="@string/title_activity_news_content" >
+        </activity>
+        <activity
+            android:name="com.example.news.NewContentActivity"
+            android:label="@string/title_activity_new_content" >
+        </activity>
+        <activity
+            android:name="com.example.news.NewsActivity"
+            android:label="@string/title_activity_news" >
         </activity>
     </application>
 
